@@ -9,4 +9,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface MyTest {
     String[] params() default {};
+    String[] expectedResults() default {};
+    double tolerance() default 0.0001;
 }
